@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/dream/data/Autobot/03_Program/Autobot_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/dream/data/Autobot/03_Program/Autobot_workspace/install -G Unix Makefiles
