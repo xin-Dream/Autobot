@@ -284,6 +284,162 @@ gtest/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+#=============================================================================
+# Target rules for targets named rosserial_stm32_geneus
+
+# Build rule for target.
+rosserial_stm32_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_geneus
+.PHONY : rosserial_stm32_geneus
+
+# fast build rule for target.
+rosserial_stm32_geneus/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_geneus.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_geneus.dir/build
+.PHONY : rosserial_stm32_geneus/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_generate_messages_eus
+
+# Build rule for target.
+rosserial_stm32_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_generate_messages_eus
+.PHONY : rosserial_stm32_generate_messages_eus
+
+# fast build rule for target.
+rosserial_stm32_generate_messages_eus/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_eus.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_eus.dir/build
+.PHONY : rosserial_stm32_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_generate_messages_cpp
+
+# Build rule for target.
+rosserial_stm32_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_generate_messages_cpp
+.PHONY : rosserial_stm32_generate_messages_cpp
+
+# fast build rule for target.
+rosserial_stm32_generate_messages_cpp/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_cpp.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_cpp.dir/build
+.PHONY : rosserial_stm32_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/_catkin_empty_exported_target.dir/build.make rosserial_stm32/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_generate_messages
+
+# Build rule for target.
+rosserial_stm32_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_generate_messages
+.PHONY : rosserial_stm32_generate_messages
+
+# fast build rule for target.
+rosserial_stm32_generate_messages/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages.dir/build
+.PHONY : rosserial_stm32_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_genlisp
+
+# Build rule for target.
+rosserial_stm32_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_genlisp
+.PHONY : rosserial_stm32_genlisp
+
+# fast build rule for target.
+rosserial_stm32_genlisp/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_genlisp.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_genlisp.dir/build
+.PHONY : rosserial_stm32_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_generate_messages_py
+
+# Build rule for target.
+rosserial_stm32_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_generate_messages_py
+.PHONY : rosserial_stm32_generate_messages_py
+
+# fast build rule for target.
+rosserial_stm32_generate_messages_py/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_py.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_py.dir/build
+.PHONY : rosserial_stm32_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_generate_messages_nodejs
+
+# Build rule for target.
+rosserial_stm32_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_generate_messages_nodejs
+.PHONY : rosserial_stm32_generate_messages_nodejs
+
+# fast build rule for target.
+rosserial_stm32_generate_messages_nodejs/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_nodejs.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_nodejs.dir/build
+.PHONY : rosserial_stm32_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_generate_messages_lisp
+
+# Build rule for target.
+rosserial_stm32_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_generate_messages_lisp
+.PHONY : rosserial_stm32_generate_messages_lisp
+
+# fast build rule for target.
+rosserial_stm32_generate_messages_lisp/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_lisp.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_generate_messages_lisp.dir/build
+.PHONY : rosserial_stm32_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_gennodejs
+
+# Build rule for target.
+rosserial_stm32_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_gennodejs
+.PHONY : rosserial_stm32_gennodejs
+
+# fast build rule for target.
+rosserial_stm32_gennodejs/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_gennodejs.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_gennodejs.dir/build
+.PHONY : rosserial_stm32_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_gencpp
+
+# Build rule for target.
+rosserial_stm32_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_gencpp
+.PHONY : rosserial_stm32_gencpp
+
+# fast build rule for target.
+rosserial_stm32_gencpp/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_gencpp.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_gencpp.dir/build
+.PHONY : rosserial_stm32_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named rosserial_stm32_genpy
+
+# Build rule for target.
+rosserial_stm32_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosserial_stm32_genpy
+.PHONY : rosserial_stm32_genpy
+
+# fast build rule for target.
+rosserial_stm32_genpy/fast:
+	$(MAKE) -f rosserial_stm32/CMakeFiles/rosserial_stm32_genpy.dir/build.make rosserial_stm32/CMakeFiles/rosserial_stm32_genpy.dir/build
+.PHONY : rosserial_stm32_genpy/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,6 +462,18 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... rosserial_stm32_geneus"
+	@echo "... rosserial_stm32_generate_messages_eus"
+	@echo "... rosserial_stm32_generate_messages_cpp"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... rosserial_stm32_generate_messages"
+	@echo "... rosserial_stm32_genlisp"
+	@echo "... rosserial_stm32_generate_messages_py"
+	@echo "... rosserial_stm32_generate_messages_nodejs"
+	@echo "... rosserial_stm32_generate_messages_lisp"
+	@echo "... rosserial_stm32_gennodejs"
+	@echo "... rosserial_stm32_gencpp"
+	@echo "... rosserial_stm32_genpy"
 .PHONY : help
 
 
