@@ -1,5 +1,0 @@
-"D:\049-Clion\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" F:\03-Works\007_GraduationDesign\Autobot\03_Program\Autobot_basement1_0
--- Minimal optimization, debug info included
--- Configuring done
--- Generating done
--- Build files have been written to: F:/03-Works/007_GraduationDesign/Autobot/03_Program/Autobot_basement1_0/cmake-build-debug-stm32
