@@ -1,0 +1,8 @@
+prefix=/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated
+
+Name: autobot_simulation
+Description: Description of autobot_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

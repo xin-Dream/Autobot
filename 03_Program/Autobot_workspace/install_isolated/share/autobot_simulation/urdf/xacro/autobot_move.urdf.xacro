@@ -1,0 +1,58 @@
+<robot name="autobot_move" xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:macro name="joint_trans" params="joint_name">
+        <transmission name="${joint_name}_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="${joint_name}">
+                <!--说明哪些硬件接口可以接入-->
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="${joint_name}_motor">
+                <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+    </xacro:macro>
+
+    <xacro:joint_trans joint_name="LB_wheel_joint"/>
+    <xacro:joint_trans joint_name="LF_wheel_joint"/>
+    <xacro:joint_trans joint_name="RF_wheel_joint"/>
+    <xacro:joint_trans joint_name="RB_wheel_joint"/>
+
+    <gazebo>
+        <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+
+            <updateRate>100.0</updateRate>
+            <robotNamespace>/</robotNamespace>
+
+            <leftFrontJoint>LF_wheel_joint</leftFrontJoint> <!-- 左前轮 -->
+            <leftRearJoint>LB_wheel_joint</leftRearJoint> <!-- 左后轮 -->
+            <rightFrontJoint>RF_wheel_joint</rightFrontJoint> <!-- 右前轮 -->
+            <rightRearJoint>RB_wheel_joint</rightRearJoint> <!-- 右后轮 -->
+
+            <wheelSeparation>0.2</wheelSeparation> <!-- 车轮间距 -->
+            <wheelDiameter>0.16</wheelDiameter> <!-- 车轮直径 -->
+
+            <commandTopic>cmd_vel</commandTopic> <!-- 运动控制话题 -->
+            <odometryFrame>odom</odometryFrame>
+            <odometryTopic>odom</odometryTopic> <!-- 里程计话题 -->
+            <robotBaseFrame>base_link</robotBaseFrame> <!-- 根坐标系 -->
+
+            <torque>1</torque><!--转矩-->
+            <broadcastTF>1</broadcastTF>
+
+            <rosDebugLevel>Debug</rosDebugLevel>
+            <publishWheelTF>true</publishWheelTF>
+            <publishTf>1</publishTf>
+            <publishWheelJointState>true</publishWheelJointState>
+            <!--            <alwaysOn>true</alwaysOn>-->
+            <!--            <legacyMode>true</legacyMode>-->
+            <!--            -->
+            <!--            <wheelTorque>30</wheelTorque>&lt;!&ndash; 车轮转矩 &ndash;&gt;-->
+            <!--            <wheelAcceleration>1.8</wheelAcceleration>&lt;!&ndash; 车轮加速度 &ndash;&gt;-->
+            <publishOdomTF>false</publishOdomTF>
+            <odometrySource>world</odometrySource> <!-- 'encoder' instead of 'world' is also possible -->
+
+        </plugin>
+    </gazebo>
+</robot>

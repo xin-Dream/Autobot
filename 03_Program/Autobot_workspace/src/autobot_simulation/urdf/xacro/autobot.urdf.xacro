@@ -1,0 +1,17 @@
+<robot name="autobot" xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <xacro:include filename="autobot_move.urdf.xacro"/>
+    <xacro:include filename="realsense_model.urdf.xacro"/>
+
+    <!--    <xacro:include filename="camera.urdf.xacro"/>-->
+    <xacro:include filename="sonar.urdf.xacro"/>
+    <xacro:include filename="laser.urdf.xacro"/>
+    <!--    <xacro:include filename="realsenseD435.urdf.xacro"/>-->
+
+    <xacro:include filename="$(find realsense_ros_gazebo)/xacro/tracker.xacro"/>
+    <xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
+    <xacro:realsense_d435 sensor_name="d435" parent_link="base_link" rate="10">
+        <origin rpy="0 0 0 " xyz="0 0 0.2"/>
+    </xacro:realsense_d435>
+
+</robot>

@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="realsense_model" xmlns:xacro="http://wiki.ros.org/xacro">
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0116131901255925 -1.57140263189205E-05 0.0231234978328491"
+        rpy="0 0 0" />
+      <mass
+        value="2.25316305620807" />
+      <inertia
+        ixx="0.0078996915795823"
+        ixy="1.5948154535386E-07"
+        ixz="0.000733932077942135"
+        iyy="0.00653334697972714"
+        iyz="2.90926203156689E-07"
+        izz="0.0130391385444765" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+<!--  <joint-->
+<!--    name="LB_wheel_joint"-->
+<!--    type="continuous">-->
+<!--    <origin-->
+<!--      xyz="-0.051575 0.1185 0.017"-->
+<!--      rpy="0 0 0" />-->
+<!--    <parent-->
+<!--      link="base_link" />-->
+<!--    <child-->
+<!--      link="LB_wheel_link" />-->
+<!--    <axis-->
+<!--      xyz="0 -1 0" />-->
+<!--  </joint>-->
+  <link name="RF_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 0.0144155178676929 1.73472347597681E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.12660325610778" />
+      <inertia
+        ixx="5.54515308491946E-05"
+        ixy="9.84379798980043E-21"
+        ixz="5.09231983123961E-20"
+        iyy="0.000103691650811599"
+        iyz="2.66432880133216E-21"
+        izz="5.54515308491945E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RF_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RF_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="RF_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0784235230362508 -0.1185 0.017"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link name="RB_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 0.014415517867693 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.12660325610778" />
+      <inertia
+        ixx="5.54515308491959E-05"
+        ixy="6.63058458826911E-21"
+        ixz="4.71876139039577E-20"
+        iyy="0.000103691650811599"
+        iyz="6.87743609523725E-21"
+        izz="5.54515308491959E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RB_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RB_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="RB_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0515749621984941 -0.1185 0.0170000000000001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RB_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link name="LF_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 -0.0144155178676928 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.12660325610778" />
+      <inertia
+        ixx="5.54515308491946E-05"
+        ixy="1.11476514306387E-20"
+        ixz="3.62879840829918E-20"
+        iyy="0.000103691650811599"
+        iyz="-6.57532575546988E-22"
+        izz="5.54515308491945E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LF_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LF_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="LF_wheel_joint" type="continuous">
+    <origin
+      xyz="0.0784235230362503 0.1185 0.017"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link name="LB_wheel_link">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 -0.014416 -6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.1266" />
+      <inertia
+        ixx="5.5452E-05"
+        ixy="1.1269E-20"
+        ixz="5.0074E-20"
+        iyy="0.00010369"
+        iyz="-9.8798E-22"
+        izz="5.5452E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LB_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LB_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="LB_wheel_joint" type="continuous">
+    <origin
+      xyz="-0.0515749621984946 0.1185 0.017"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LB_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.0202903257890848 -5.38506170229657E-18 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.074292004386588" />
+      <inertia
+        ixx="6.25164561595021E-06"
+        ixy="1.09511061769881E-22"
+        ixz="-1.05356711406204E-22"
+        iyy="9.60171917646479E-06"
+        iyz="-1.04762747697268E-22"
+        izz="1.14159968448672E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0854500682801336 0 0.021"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="R_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00811934334227205 -0.000188378653789041 -0.0109796493363324"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709291" />
+      <inertia
+        ixx="4.07348519263311E-07"
+        ixy="-1.07222949743685E-10"
+        ixz="-6.31099022040221E-10"
+        iyy="4.07971772782717E-07"
+        iyz="-1.64673276878808E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/R_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/R_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="R_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.0127112996311823 -0.1125 0.0392366"
+      rpy="0 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="L_range_link">
+    <inertial>
+      <origin
+        xyz="-0.0070193 0.00018838 -0.010032"
+        rpy="0 0 0" />
+      <mass
+        value="0.0042661" />
+      <inertia
+        ixx="4.0735E-07"
+        ixy="1.0722E-10"
+        ixz="6.311E-10"
+        iyy="4.0797E-07"
+        iyz="-1.6467E-11"
+        izz="1.08E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/L_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.18039 0.18039 0.18039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/L_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="L_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.0123868089774774 0.1114 0.0382478433671816"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="RF_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00731934334227206 -0.000188378653789074 -0.0109796493363324"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="-1.07222949743676E-10"
+        ixz="-6.3109902204026E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.64673276880123E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RF_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RF_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="RF_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.095464280418878 -0.0534999999999997 0.0515"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="RB_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00701934334227206 0.000188378653789081 -0.0100315940308492"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="1.07222949743646E-10"
+        ixz="6.31099022040137E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.64673276880053E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RB_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/RB_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="RB_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.114521325155332 -0.0644999999999997 0.0252207965630269"
+      rpy="0 0.785398163397454 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RB_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="LF_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00811934334227206 -0.000188378653789067 -0.0109796493363324"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="-1.07222949743721E-10"
+        ixz="-6.31099022040278E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.64673276879931E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LF_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LF_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="LF_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.0962642804188774 0.0620922441262945 0.0515"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="LB_range_link">
+    <inertial>
+      <origin
+        xyz="-0.0070193 0.00018838 -0.010032"
+        rpy="0 0 0" />
+      <mass
+        value="0.0042661" />
+      <inertia
+        ixx="4.0735E-07"
+        ixy="1.0722E-10"
+        ixz="6.311E-10"
+        iyy="4.0797E-07"
+        iyz="-1.6467E-11"
+        izz="1.08E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LB_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.18039 0.18039 0.18039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/LB_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="LB_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.114521325155331 0.0510922441262945 0.0252207965630269"
+      rpy="0 0.785398163397454 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LB_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="Lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.00068221 -0.00015001 -0.02175"
+        rpy="0 0 0" />
+      <mass
+        value="0.46489" />
+      <inertia
+        ixx="0.00022831"
+        ixy="1.547E-06"
+        ixz="3.0807E-06"
+        iyy="0.00022265"
+        iyz="6.7689E-07"
+        izz="0.00031343" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/Lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/Lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Lidar_Joint"
+    type="fixed">
+    <origin
+      xyz="0.07 0 0.104312324043661"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link name="Realsense_link">
+    <inertial>
+      <origin
+        xyz="-0.012548 -0.0022933 -6.0568E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.044752" />
+      <inertia
+        ixx="2.7278E-05"
+        ixy="2.4434E-07"
+        ixz="-1.174E-09"
+        iyy="3.9447E-06"
+        iyz="-2.802E-09"
+        izz="2.7362E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/Realsense_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://realsense_model/meshes/Realsense_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Realsense_Joint"
+    type="fixed">
+    <origin
+      xyz="0.01445 0.0025395 0.1645"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Realsense_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

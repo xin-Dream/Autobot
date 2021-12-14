@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="kinect_model">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0113393952513282 -1.53435493170311E-05 0.0243868937815651"
+        rpy="0 0 0" />
+      <mass
+        value="2.30756670666722" />
+      <inertia
+        ixx="0.00800283588895297"
+        ixy="1.59481545353448E-07"
+        ixz="0.000733932077942134"
+        iyy="0.0066364912890978"
+        iyz="2.90926203156029E-07"
+        izz="0.0130431055308841" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+<!--  <joint-->
+<!--    name="LB_wheel_joint"-->
+<!--    type="continuous">-->
+<!--    <origin-->
+<!--      xyz="-0.051575 0.1185 0.017"-->
+<!--      rpy="0 0 0" />-->
+<!--    <parent-->
+<!--      link="base_link" />-->
+<!--    <child-->
+<!--      link="LB_wheel_link" />-->
+<!--    <axis-->
+<!--      xyz="0 -1 0" />-->
+<!--  </joint>-->
+  <link
+    name="RF_wheel_link">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 0.0144155178676929 1.73472347597681E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.12660325610778" />
+      <inertia
+        ixx="5.54515308491946E-05"
+        ixy="9.84820771895821E-21"
+        ixz="5.09403348796379E-20"
+        iyy="0.000103691650811599"
+        iyz="2.66578769854652E-21"
+        izz="5.54515308491945E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RF_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RF_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0784235230362508 -0.1185 0.017"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="RB_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 0.014415517867693 1.73472347597681E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.12660325610778" />
+      <inertia
+        ixx="5.54515308491959E-05"
+        ixy="6.62916218446814E-21"
+        ixz="4.7153919528763E-20"
+        iyy="0.000103691650811599"
+        iyz="6.87429813318011E-21"
+        izz="5.54515308491959E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RB_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RB_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0515749621984941 -0.1185 0.0170000000000001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RB_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="LF_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 -0.0144155178676929 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.12660325610778" />
+      <inertia
+        ixx="5.54515308491946E-05"
+        ixy="1.11495609237839E-20"
+        ixz="3.63801146273642E-20"
+        iyy="0.000103691650811599"
+        iyz="-6.56912736131577E-22"
+        izz="5.54515308491945E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LF_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LF_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0784235230362503 0.1185 0.017"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="LB_wheel_link">
+    <inertial>
+      <origin
+        xyz="-2.08166817117217E-17 -0.0144155178676929 -6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.12660325610778" />
+      <inertia
+        ixx="5.54515308491946E-05"
+        ixy="1.12624709019844E-20"
+        ixz="5.00963968017422E-20"
+        iyy="0.000103691650811599"
+        iyz="-9.88362241127094E-22"
+        izz="5.54515308491945E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LB_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LB_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0515749621984946 0.1185 0.017"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LB_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.0202903257890848 -5.24309769771167E-18 -3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.074292004386588" />
+      <inertia
+        ixx="6.25164561595021E-06"
+        ixy="8.13721429177202E-23"
+        ixz="-7.81926009241593E-23"
+        iyy="9.60171917646479E-06"
+        iyz="-1.04762747697268E-22"
+        izz="1.14159968448672E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0854500682801336 0 0.021"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="R_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00811934334227205 -0.00018837865378904 -0.0109796493363324"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709291" />
+      <inertia
+        ixx="4.07348519263311E-07"
+        ixy="-1.07222949743695E-10"
+        ixz="-6.31099022040222E-10"
+        iyy="4.07971772782717E-07"
+        iyz="-1.6467327687883E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/R_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/R_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.0127112996311823 -0.1125 0.0392366"
+      rpy="0 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="L_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00701934334227206 0.000188378653789073 -0.0100315940308492"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="1.07222949743718E-10"
+        ixz="6.31099022040191E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.64673276880139E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/L_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/L_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.0123868089774774 0.1114 0.0382478433671816"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RF_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00731934334227206 -0.000188378653789074 -0.0109796493363324"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="-1.07222949743672E-10"
+        ixz="-6.31099022040263E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.64673276880109E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RF_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RF_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.095464280418878 -0.0534999999999997 0.0515"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RB_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00701934334227206 0.000188378653789081 -0.0100315940308492"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="1.07222949743657E-10"
+        ixz="6.31099022040184E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.6467327688003E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RB_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/RB_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.114521325155332 -0.0644999999999997 0.0252207965630269"
+      rpy="0 0.785398163397454 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RB_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LF_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00811934334227205 -0.000188378653789067 -0.0109796493363324"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="-1.07222949743721E-10"
+        ixz="-6.31099022040278E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.64673276879956E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LF_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LF_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.0962642804188774 0.0620922441262945 0.0515"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LB_range_link">
+    <inertial>
+      <origin
+        xyz="-0.00701934334227206 0.000188378653789081 -0.0100315940308492"
+        rpy="0 0 0" />
+      <mass
+        value="0.00426614745709292" />
+      <inertia
+        ixx="4.07348519263312E-07"
+        ixy="1.07222949743643E-10"
+        ixz="6.31099022040114E-10"
+        iyy="4.07971772782718E-07"
+        iyz="-1.64673276880213E-11"
+        izz="1.07995575989039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LB_range_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.180392156862745 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/LB_range_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_range_joint"
+    type="fixed">
+    <origin
+      xyz="0.114521325155331 0.0510922441262945 0.0252207965630269"
+      rpy="0 0.785398163397454 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LB_range_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.000682211679710637 -0.000150008271643339 -0.0217495811624094"
+        rpy="0 0 0" />
+      <mass
+        value="0.464886528328847" />
+      <inertia
+        ixx="0.000228307774390107"
+        ixy="1.54699926176774E-06"
+        ixz="3.08074540886092E-06"
+        iyy="0.000222654022654811"
+        iyz="6.76890055210614E-07"
+        izz="0.000313433847973582" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/Lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/Lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lidar_Joint"
+    type="fixed">
+    <origin
+      xyz="0.07 0 0.104312324043661"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="KinectV2_link">
+    <inertial>
+      <origin
+        xyz="-0.0348334075383216 -0.00548037773186402 -0.00342103561945831"
+        rpy="0 0 0" />
+      <mass
+        value="0.820850234257136" />
+      <inertia
+        ixx="0.00375504667035701"
+        ixy="1.88807909774668E-05"
+        ixz="-1.45356088678848E-05"
+        iyy="0.000409110348464913"
+        iyz="3.06773823237538E-06"
+        izz="0.00392263894443723" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/KinectV2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kinect_model/meshes/KinectV2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="KinectV2_Joint"
+    type="fixed">
+    <origin
+      xyz="0.0466045341875297 0.00595876662338681 0.193913485084376"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="KinectV2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

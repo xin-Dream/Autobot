@@ -1,0 +1,8 @@
+prefix=/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/autobot_gui
+
+Name: autobot_gui
+Description: Description of autobot_gui
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

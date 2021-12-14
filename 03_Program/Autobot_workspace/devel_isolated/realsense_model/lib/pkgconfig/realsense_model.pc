@@ -1,0 +1,8 @@
+prefix=/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/realsense_model
+
+Name: realsense_model
+Description: Description of realsense_model
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

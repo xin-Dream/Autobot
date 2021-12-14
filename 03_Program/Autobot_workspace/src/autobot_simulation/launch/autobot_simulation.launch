@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find autobot_simulation)/launch/autobot2gazebo.launch"/>
+    <include file="$(find autobot_simulation)/launch/autobot2rviz.launch"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_frame_2_odom_link"
+          args="0 0 0 0 0 0 /odom /base_link"/>
+
+<!--    <node pkg="ros_pyqt_gui" type="turtle_ctrl.py" name="arena_ctrl_node" output="screen" />-->
+</launch>
