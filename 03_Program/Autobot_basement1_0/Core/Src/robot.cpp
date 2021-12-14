@@ -34,7 +34,7 @@ void loop(void) {
 }
 
 void led0(const std_msgs::UInt8 &msg) {
-	if (msg.data == 1) {
+	if (msg.data == 49) {
 		HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 
 		OLED_ShowNum(20, 12, 1, 6, 12);
