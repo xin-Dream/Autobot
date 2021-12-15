@@ -1,3 +1,6 @@
 [submodule "03_Program/Autobot_workspace/abseil-cpp"]
 	path = 03_Program/Autobot_workspace/abseil-cpp
 	url = https://github.com/abseil/abseil-cpp.git
+[submodule "03_Program/Autobot_basement1_0/Core/stm32Library"]
+	path = 03_Program/Autobot_basement1_0/Core/stm32Library
+	url = git@github.com:xin-Dream/stm32Library.git
