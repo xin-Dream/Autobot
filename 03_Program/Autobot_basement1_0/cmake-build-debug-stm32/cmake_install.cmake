@@ -1,8 +1,8 @@
-# Install script for directory: F:/03-Works/007_GraduationDesign/Autobot/03_Program/Autobot_basement1_0
+# Install script for directory: /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Autobot_basement1_0")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/03-Works/007_GraduationDesign/Autobot/03_Program/Autobot_basement1_0/cmake-build-debug-stm32/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/cmake-build-debug-stm32/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

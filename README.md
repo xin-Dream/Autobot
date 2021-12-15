@@ -1,6 +1,9 @@
 # Autobot
 
 # 更新日志
++ 2021-12-14
+  + git
+    + 增加submodule使用
 
 + 2021-12-13
   + GUI

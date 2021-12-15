@@ -1,24 +1,24 @@
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
+Compiler: /home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-gcc 
 Build flags: 
 Id flags:  
 
 The output was:
 1
-d:/053-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/ld.exe: d:/053-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o): in function `exit':
+/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
 exit.c:(.text.exit+0x2c): undefined reference to `_exit'
-collect2.exe: error: ld returned 1 exit status
+collect2: error: ld returned 1 exit status
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe 
+Compiler: /home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-g++ 
 Build flags: 
 Id flags:  
 
 The output was:
 1
-d:/053-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/ld.exe: d:/053-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o): in function `exit':
+/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld: /home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
 exit.c:(.text.exit+0x2c): undefined reference to `_exit'
-collect2.exe: error: ld returned 1 exit status
+collect2: error: ld returned 1 exit status
 
 

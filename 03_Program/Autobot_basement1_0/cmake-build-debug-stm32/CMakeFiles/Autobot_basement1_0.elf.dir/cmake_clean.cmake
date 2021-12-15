@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "Autobot_basement1_0.elf"
-  "Autobot_basement1_0.elf.manifest"
   "Autobot_basement1_0.elf.pdb"
+  "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Inc/duration.cpp.obj"
+  "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Inc/time.cpp.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/freertos.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/main.c.obj"
+  "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/robot.cpp.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/stm32f4xx_it.c.obj"
@@ -31,6 +33,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Autobot_basement1_0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+  "CMakeFiles/Autobot_basement1_0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
   "CMakeFiles/Autobot_basement1_0.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
@@ -54,6 +57,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C)
+foreach(lang ASM C CXX)
   include(CMakeFiles/Autobot_basement1_0.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

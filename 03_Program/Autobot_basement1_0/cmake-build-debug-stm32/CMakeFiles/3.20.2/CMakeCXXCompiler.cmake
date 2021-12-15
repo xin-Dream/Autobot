@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe")
+set(CMAKE_CXX_COMPILER "/home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "10.2.1")
+set(CMAKE_CXX_COMPILER_VERSION "10.3.1")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")
@@ -22,10 +22,10 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 set(CMAKE_AR "arm-none-eabi-ar")
-set(CMAKE_CXX_COMPILER_AR "D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ar.exe")
-set(CMAKE_RANLIB "D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.exe")
-set(CMAKE_LINKER "D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-ld.exe")
+set(CMAKE_CXX_COMPILER_AR "/home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ar")
+set(CMAKE_RANLIB "/home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib")
+set(CMAKE_LINKER "/home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -85,7 +85,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "D:/053-gcc-arm-none-eabi/arm-none-eabi/include/c++/10.2.1;D:/053-gcc-arm-none-eabi/arm-none-eabi/include/c++/10.2.1/arm-none-eabi;D:/053-gcc-arm-none-eabi/arm-none-eabi/include/c++/10.2.1/backward;D:/053-gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.2.1/include;D:/053-gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.2.1/include-fixed;D:/053-gcc-arm-none-eabi/arm-none-eabi/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/dream/02-software/006-gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1;/home/dream/02-software/006-gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/arm-none-eabi;/home/dream/02-software/006-gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/backward;/home/dream/02-software/006-gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include;/home/dream/02-software/006-gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include-fixed;/home/dream/02-software/006-gcc-arm-none-eabi/arm-none-eabi/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

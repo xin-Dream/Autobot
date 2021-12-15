@@ -111,7 +111,6 @@ int main(void) {
 
 	OLED_Init();
 
-
 	/* USER CODE END 2 */
 
 	/* USER CODE BEGIN RTOS_MUTEX */

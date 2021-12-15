@@ -1,5 +1,19 @@
-"D:\049-Clion\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/053-gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" F:\03-Works\007_GraduationDesign\Autobot\03_Program\Autobot_basement1_0
+/home/dream/02-software/001_Clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-g++ -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0
+-- The C compiler identification is GNU 10.3.1
+-- The CXX compiler identification is GNU 10.3.1
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/dream/02-software/006-gcc-arm-none-eabi/bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Minimal optimization, debug info included
 -- Configuring done
 -- Generating done
--- Build files have been written to: F:/03-Works/007_GraduationDesign/Autobot/03_Program/Autobot_basement1_0/cmake-build-debug-stm32
+-- Build files have been written to: /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/cmake-build-debug-stm32
