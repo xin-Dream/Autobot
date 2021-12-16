@@ -1,9 +1,22 @@
 # Autobot
 
 # 更新日志
+
++ 2021-12-16
+  + stm32 
+    + 完全读取JY60
+    + 对JY60进行了零偏矫正、Z轴矫正
+  + GUI
+    + 使用多线程实时显示JY60数据
+    + 按钮运行bash命令打开仿真环境
+  + ROS
+    + [跨功能包调用msg消息](http://zhangguixin.top/2021/11/16/ROS/使用自定义消息实现ROS与stm32通讯/)
+    + fork rosserial_stm32
+
+
 + 2021-12-14
   + git
-    + 增加submodule使用
+    + [增加submodule使用](http://zhangguixin.top/2021/12/14/Git中子模块的使用/)
 
 + 2021-12-13
   + GUI
