@@ -67,14 +67,14 @@ set(autobot_gui_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(autobot_gui_SOURCE_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/autobot_gui)
-  set(autobot_gui_DEVEL_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/autobot_gui)
+  set(autobot_gui_SOURCE_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/autobot_gui)
+  set(autobot_gui_DEVEL_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/autobot_gui)
   set(autobot_gui_INSTALL_PREFIX "")
   set(autobot_gui_PREFIX ${autobot_gui_DEVEL_PREFIX})
 else()
   set(autobot_gui_SOURCE_PREFIX "")
   set(autobot_gui_DEVEL_PREFIX "")
-  set(autobot_gui_INSTALL_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated)
+  set(autobot_gui_INSTALL_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated)
   set(autobot_gui_PREFIX ${autobot_gui_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(autobot_gui_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(autobot_gui_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated/lib;/home/dream/01-data/001_Arena/Arena/001-Program/Arena_ROS/Arena_workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/lib;/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

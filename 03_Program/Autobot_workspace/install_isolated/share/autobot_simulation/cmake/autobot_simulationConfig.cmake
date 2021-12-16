@@ -67,14 +67,14 @@ set(autobot_simulation_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(autobot_simulation_SOURCE_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/autobot_simulation)
-  set(autobot_simulation_DEVEL_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/autobot_simulation)
+  set(autobot_simulation_SOURCE_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/autobot_simulation)
+  set(autobot_simulation_DEVEL_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/autobot_simulation)
   set(autobot_simulation_INSTALL_PREFIX "")
   set(autobot_simulation_PREFIX ${autobot_simulation_DEVEL_PREFIX})
 else()
   set(autobot_simulation_SOURCE_PREFIX "")
   set(autobot_simulation_DEVEL_PREFIX "")
-  set(autobot_simulation_INSTALL_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated)
+  set(autobot_simulation_INSTALL_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated)
   set(autobot_simulation_PREFIX ${autobot_simulation_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated/lib;/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated/lib;/home/dream/01-data/001_Arena/Arena/001-Program/Arena_ROS/Arena_workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/lib;/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

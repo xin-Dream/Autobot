@@ -1,8 +1,8 @@
-# Install script for directory: /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartographer/docs
+# Install script for directory: /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/cartographer/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated")
+  set(CMAKE_INSTALL_PREFIX "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

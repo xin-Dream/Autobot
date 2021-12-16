@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "kinect_model"
-PROJECT_SPACE_DIR = "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/kinect_model"
+PROJECT_SPACE_DIR = "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/kinect_model"
 PROJECT_VERSION = "1.0.0"

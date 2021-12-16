@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "message_runtime;gazebo_msgs;roscpp;nodelet;geometry_msgs;sensor_msgs;urdf;tf;tf2_ros;rosconsole;std_msgs;gazebo_ros;image_transport;camera_info_manager".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "realsense_ros_gazebo"
-PROJECT_SPACE_DIR = "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated"
+PROJECT_SPACE_DIR = "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated"
 PROJECT_VERSION = "1.2.0"

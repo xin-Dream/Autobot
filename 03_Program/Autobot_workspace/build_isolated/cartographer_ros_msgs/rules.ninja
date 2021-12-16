@@ -99,7 +99,7 @@ rule CXX_SHARED_LIBRARY_LINKER__gtest
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake -S/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartographer_ros/cartographer_ros_msgs -B/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/build_isolated/cartographer_ros_msgs
+  command = /usr/bin/cmake -S/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/cartographer_ros/cartographer_ros_msgs -B/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/build_isolated/cartographer_ros_msgs
   description = Re-running CMake...
   generator = 1
 

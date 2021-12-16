@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/cartographer_rviz}
+: ${_CATKIN_SETUP_DIR:=/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/cartographer_rviz}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

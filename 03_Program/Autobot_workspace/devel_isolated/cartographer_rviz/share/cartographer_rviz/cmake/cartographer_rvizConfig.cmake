@@ -67,14 +67,14 @@ set(cartographer_rviz_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(cartographer_rviz_SOURCE_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartographer_ros/cartographer_rviz)
-  set(cartographer_rviz_DEVEL_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/cartographer_rviz)
+  set(cartographer_rviz_SOURCE_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/cartographer_ros/cartographer_rviz)
+  set(cartographer_rviz_DEVEL_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/cartographer_rviz)
   set(cartographer_rviz_INSTALL_PREFIX "")
   set(cartographer_rviz_PREFIX ${cartographer_rviz_DEVEL_PREFIX})
 else()
   set(cartographer_rviz_SOURCE_PREFIX "")
   set(cartographer_rviz_DEVEL_PREFIX "")
-  set(cartographer_rviz_INSTALL_PREFIX /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated)
+  set(cartographer_rviz_INSTALL_PREFIX /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated)
   set(cartographer_rviz_PREFIX ${cartographer_rviz_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(cartographer_rviz_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartographer_ros/cartographer_rviz/. " STREQUAL " ")
+if(NOT "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/cartographer_ros/cartographer_rviz/. " STREQUAL " ")
   set(cartographer_rviz_INCLUDE_DIRS "")
-  set(_include_dirs "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartographer_ros/cartographer_rviz/.")
+  set(_include_dirs "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/cartographer_ros/cartographer_rviz/.")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "https://github.com/cartographer-project/cartographer_ros " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartogr
         message(FATAL_ERROR "Project 'cartographer_rviz' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'cartographer_rviz' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartographer_ros/cartographer_rviz/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'cartographer_rviz' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/cartographer_ros/cartographer_rviz/${idir}'.  ${_report}")
     endif()
     _list_append_unique(cartographer_rviz_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/cartographer_rviz/lib;/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated/lib;/home/dream/01-data/001_Arena/Arena/001-Program/Arena_ROS/Arena_workspace/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/cartographer_rviz/lib;/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

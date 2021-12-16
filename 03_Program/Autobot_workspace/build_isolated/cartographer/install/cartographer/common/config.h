@@ -21,8 +21,8 @@ namespace cartographer {
 namespace common {
 
 constexpr char kConfigurationFilesDirectory[] =
-    "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated/share/cartographer/configuration_files";
-constexpr char kSourceDirectory[] = "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/cartographer";
+    "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/cartographer/configuration_files";
+constexpr char kSourceDirectory[] = "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/cartographer";
 
 }  // namespace common
 }  // namespace cartographer

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated")
+  set(CMAKE_INSTALL_PREFIX "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/build_isolated/realsense_model/gtest/googletest/cmake_install.cmake")
+  include("/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/build_isolated/realsense_model/gtest/googletest/cmake_install.cmake")
 
 endif()
 

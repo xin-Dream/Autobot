@@ -1,0 +1,7 @@
+set(autobot_gui_SETUP_PY_SETUP_MODULE "distutils.core")
+set(autobot_gui_SETUP_PY_VERSION "0.0.0")
+set(autobot_gui_SETUP_PY_SCRIPTS "scripts/autobotUI.py;scripts/custombutton.py;scripts/window.py")
+set(autobot_gui_SETUP_PY_PACKAGES "autobot_gui")
+set(autobot_gui_SETUP_PY_PACKAGE_DIRS "scripts")
+set(autobot_gui_SETUP_PY_MODULES "")
+set(autobot_gui_SETUP_PY_MODULE_DIRS "")

@@ -4,3 +4,6 @@
 [submodule "03_Program/Autobot_basement1_0/Core/stm32Library"]
 	path = 03_Program/Autobot_basement1_0/Core/stm32Library
 	url = git@github.com:xin-Dream/stm32Library.git
+[submodule "03_Program/Autobot_workspace/src/rosserial_stm32"]
+	path = 03_Program/Autobot_workspace/src/rosserial_stm32
+	url = https://github.com/yoneken/rosserial_stm32.git

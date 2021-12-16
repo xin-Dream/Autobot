@@ -7,6 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/autobot_simulation:$CMAKE_PREFIX_PATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/autobot_simulation/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/src/autobot_simulation:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/autobot_simulation:$CMAKE_PREFIX_PATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/autobot_simulation/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/src/autobot_simulation:$ROS_PACKAGE_PATH"

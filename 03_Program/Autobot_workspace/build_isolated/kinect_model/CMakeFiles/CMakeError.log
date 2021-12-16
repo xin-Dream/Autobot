@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/build_isolated/kinect_model/CMakeFiles/CMakeTmp
+Change Dir: /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/build_isolated/kinect_model/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_8bffb && [1/2] Building C object CMakeFiles/cmTC_8bffb.dir/src.c.o
-[2/2] Linking C executable cmTC_8bffb
-FAILED: cmTC_8bffb 
-: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -rdynamic CMakeFiles/cmTC_8bffb.dir/src.c.o  -o cmTC_8bffb   && :
-/usr/bin/ld: CMakeFiles/cmTC_8bffb.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/ninja cmTC_c8a39 && [1/2] Building C object CMakeFiles/cmTC_c8a39.dir/src.c.o
+[2/2] Linking C executable cmTC_c8a39
+FAILED: cmTC_c8a39 
+: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -rdynamic CMakeFiles/cmTC_c8a39.dir/src.c.o  -o cmTC_c8a39   && :
+/usr/bin/ld: CMakeFiles/cmTC_c8a39.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
@@ -34,12 +34,12 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/dream/01-data/005_Autobot/01_program/Autobot_workspace/build_isolated/kinect_model/CMakeFiles/CMakeTmp
+Change Dir: /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/build_isolated/kinect_model/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_57d48 && [1/2] Building C object CMakeFiles/cmTC_57d48.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_57d48
-FAILED: cmTC_57d48 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  -rdynamic CMakeFiles/cmTC_57d48.dir/CheckFunctionExists.c.o  -o cmTC_57d48  -lpthreads && :
+Run Build Command(s):/usr/bin/ninja cmTC_29f1e && [1/2] Building C object CMakeFiles/cmTC_29f1e.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_29f1e
+FAILED: cmTC_29f1e 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  -rdynamic CMakeFiles/cmTC_29f1e.dir/CheckFunctionExists.c.o  -o cmTC_29f1e  -lpthreads && :
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.

@@ -25,7 +25,6 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "../Core/stm32Library"
   "../Core/Inc"
   "../USB_DEVICE/App"
   "../USB_DEVICE/Target"
@@ -38,6 +37,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
   "../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Core/stm32Library"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/Src/freertos.c" "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/cmake-build-debug-stm32/CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/freertos.c.obj"
@@ -103,7 +103,6 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../Core/stm32Library"
   "../Core/Inc"
   "../USB_DEVICE/App"
   "../USB_DEVICE/Target"
@@ -116,6 +115,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
   "../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Core/stm32Library"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/Inc/duration.cpp" "/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/cmake-build-debug-stm32/CMakeFiles/Autobot_basement1_0.elf.dir/Core/Inc/duration.cpp.obj"
@@ -135,7 +135,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../Core/stm32Library"
   "../Core/Inc"
   "../USB_DEVICE/App"
   "../USB_DEVICE/Target"
@@ -148,6 +147,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
   "../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Core/stm32Library"
   )
 
 # The set of dependency files which are needed:

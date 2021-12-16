@@ -1,0 +1,8 @@
+prefix=/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/autobot_rosserial
+
+Name: autobot_rosserial
+Description: Description of autobot_rosserial
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

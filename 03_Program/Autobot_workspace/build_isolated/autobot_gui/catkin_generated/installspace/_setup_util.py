@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel;/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated;/home/dream/01-data/001_Arena/Arena/001-Program/Arena_ROS/Arena_workspace/devel;/opt/ros/noetic'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated;/opt/ros/noetic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

@@ -1,0 +1,8 @@
+prefix=/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/autobot_msgs
+
+Name: autobot_msgs
+Description: Description of autobot_msgs
+Version: 0.0.0
+Cflags: -I/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/autobot_msgs/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs geometry_msgs message_runtime

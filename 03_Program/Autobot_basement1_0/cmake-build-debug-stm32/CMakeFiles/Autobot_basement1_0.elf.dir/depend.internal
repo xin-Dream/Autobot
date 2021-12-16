@@ -184,8 +184,14 @@ CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
  /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/Src/stm32f4xx_hal_timebase_tim.c
 CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/stm32f4xx_it.c.obj
  ../Core/Inc/main.h
+ ../Core/Inc/robot.h
  ../Core/Inc/stm32f4xx_hal_conf.h
  ../Core/Inc/stm32f4xx_it.h
+ ../Core/stm32Library/algorithm.h
+ ../Core/stm32Library/communication.h
+ ../Core/stm32Library/macro.h
+ ../Core/stm32Library/motorControl.h
+ ../Core/stm32Library/oled.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
@@ -1638,6 +1644,8 @@ CMakeFiles/Autobot_basement1_0.elf.dir/Core/Inc/time.cpp.obj
  /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/Inc/time.cpp
 CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/robot.cpp.obj
  ../Core/Inc/STM32Hardware.h
+ ../Core/Inc/autobot_msgs/IMU.h
+ ../Core/Inc/geometry_msgs/Vector3.h
  ../Core/Inc/main.h
  ../Core/Inc/robot.h
  ../Core/Inc/ros.h
@@ -1652,9 +1660,7 @@ CMakeFiles/Autobot_basement1_0.elf.dir/Core/Src/robot.cpp.obj
  ../Core/Inc/rosserial_msgs/Log.h
  ../Core/Inc/rosserial_msgs/RequestParam.h
  ../Core/Inc/rosserial_msgs/TopicInfo.h
- ../Core/Inc/std_msgs/String.h
  ../Core/Inc/std_msgs/Time.h
- ../Core/Inc/std_msgs/UInt8.h
  ../Core/Inc/stm32f4xx_hal_conf.h
  ../Core/stm32Library/algorithm.h
  ../Core/stm32Library/communication.h

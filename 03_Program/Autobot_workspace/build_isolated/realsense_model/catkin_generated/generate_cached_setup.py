@@ -12,16 +12,16 @@ try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated;/home/dream/01-data/001_Arena/Arena/001-Program/Arena_ROS/Arena_workspace/devel;/opt/ros/noetic'.split(';'):
+    for workspace in '/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated;/opt/ros/noetic'.split(';'):
         python_path = os.path.join(workspace, 'lib/python3/dist-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/devel_isolated/realsense_model/env.sh')
+code = generate_environment_script('/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/realsense_model/env.sh')
 
-output_filename = '/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/build_isolated/realsense_model/catkin_generated/setup_cached.sh'
+output_filename = '/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/build_isolated/realsense_model/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

@@ -1,0 +1,8 @@
+prefix=/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/devel_isolated/rosserial_stm32
+
+Name: rosserial_stm32
+Description: Description of rosserial_stm32
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime

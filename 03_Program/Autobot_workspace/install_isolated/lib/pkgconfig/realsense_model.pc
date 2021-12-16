@@ -1,4 +1,4 @@
-prefix=/home/dream/01-data/005_Autobot/01_program/Autobot_workspace/install_isolated
+prefix=/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated
 
 Name: realsense_model
 Description: Description of realsense_model

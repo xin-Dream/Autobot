@@ -49,7 +49,6 @@
 					<Add option="-DARM_MATH_ROUNDING"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F407xx"/>
-					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/Inc"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/USB_DEVICE/App"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/USB_DEVICE/Target"/>
@@ -62,6 +61,7 @@
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Include"/>
+					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library"/>
 					<Add directory="/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -88,7 +88,6 @@
 					<Add option="-DARM_MATH_ROUNDING"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F407xx"/>
-					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/Inc"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/USB_DEVICE/App"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/USB_DEVICE/Target"/>
@@ -101,6 +100,7 @@
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Include"/>
+					<Add directory="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library"/>
 					<Add directory="/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/home/dream/02-software/006-gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -1232,6 +1232,48 @@
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/Src/system_stm32f4xx.c">
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/applypatch-msg.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/commit-msg.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/fsmonitor-watchman.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/post-update.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/pre-applypatch.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/pre-commit.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/pre-merge-commit.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/pre-push.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/pre-rebase.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/pre-receive.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/prepare-commit-msg.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/hooks/update.sample">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/objects/pack/pack-c3533057dddc9f74fdd34633c7dacd9c3de87fe9.idx">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/.git/objects/pack/pack-c3533057dddc9f74fdd34633c7dacd9c3de87fe9.pack">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Core/stm32Library/README.md">
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
@@ -1275,6 +1317,9 @@
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Device/ST/STM32F4xx/License.md">
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Include/cmsis_armcc.h">
@@ -1338,6 +1383,9 @@
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/CMSIS/LICENSE.txt">
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
@@ -1404,6 +1452,9 @@
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h">
+			<Option target="Autobot_basement1_0.elf"/>
+		</Unit>
+		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/STM32F4xx_HAL_Driver/License.md">
 			<Option target="Autobot_basement1_0.elf"/>
 		</Unit>
 		<Unit filename="/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_basement1_0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
