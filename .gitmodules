@@ -6,4 +6,4 @@
 	url = git@github.com:xin-Dream/stm32Library.git
 [submodule "03_Program/Autobot_workspace/src/rosserial_stm32"]
 	path = 03_Program/Autobot_workspace/src/rosserial_stm32
-	url = https://github.com/yoneken/rosserial_stm32.git
+	url = git@github.com:xin-Dream/rosserial_stm32.git
