@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'autobotUI.ui'
+# Form implementation generated from reading ui file 'mainWindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.6
 #
@@ -154,6 +154,9 @@ class Ui_MainWindow(object):
         self.opensimulation = QtWidgets.QPushButton(self.centralwidget)
         self.opensimulation.setGeometry(QtCore.QRect(50, 230, 151, 25))
         self.opensimulation.setObjectName("opensimulation")
+        self.closesimulation = QtWidgets.QPushButton(self.centralwidget)
+        self.closesimulation.setGeometry(QtCore.QRect(50, 270, 151, 25))
+        self.closesimulation.setObjectName("closesimulation")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -194,6 +197,7 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "y"))
         self.label_13.setText(_translate("MainWindow", "z"))
         self.opensimulation.setText(_translate("MainWindow", "打开Autobot仿真环境"))
+        self.closesimulation.setText(_translate("MainWindow", "关闭Autobot仿真环境"))
         self.menu.setTitle(_translate("MainWindow", "基础信息"))
         self.actionxianshi.setText(_translate("MainWindow", "xianshi"))
 from custombutton import CustomButton

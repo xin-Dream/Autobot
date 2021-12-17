@@ -11,9 +11,11 @@
 /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/cmake/autobot_guiConfig.cmake
 /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/cmake/autobot_guiConfig-version.cmake
 /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/package.xml
-/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/autobotUI.ui
+/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/mainWindow.ui
+/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/readDataThread.py
 /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/window.py
 /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/__pycache__/custombutton.cpython-38.pyc
 /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/__pycache__/autobotUI.cpython-38.pyc
-/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/autobotUI.py
+/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/__pycache__/mainWindow.cpython-38.pyc
+/home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/mainWindow.py
 /home/dream/01-data/005_Autobot/Autobot/03_Program/Autobot_workspace/install_isolated/share/autobot_gui/scripts/custombutton.py

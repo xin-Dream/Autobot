@@ -2,9 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/03_Program/Autobot_workspace/src/rosserial_stm32" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/abseil-cpp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/cartographer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/cartographer_ros" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/realsense_ros_gazebo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rosserial_stm32" vcs="Git" />
   </component>
 </project>

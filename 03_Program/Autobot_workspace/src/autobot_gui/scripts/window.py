@@ -8,10 +8,12 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 from custombutton import CustomButton
-from autobotUI import *
+from mainWindow import *
 
 from geometry_msgs.msg import Twist
 from autobot_msgs.msg import IMU
+
+from readDataThread import readdata_Thread
 
 
 class AutobotWindow(QMainWindow, Ui_MainWindow):
@@ -24,11 +26,10 @@ class AutobotWindow(QMainWindow, Ui_MainWindow):
 
         # 申明一个时钟控件
         self.timer1 = QTimer(self)
-        self.timer1.timeout.connect(self.updateProcessBar)
+        # self.timer1.timeout.connect(self.updateProcessBar)
 
         # 获得摇杆信息
         self.linear, self.angular = self.fsvjoy_widget.get_info()
-
         self.timer1.start(100)
 
         # self.settopicButton.clicked.connect(self.setPublisher)
@@ -40,36 +41,55 @@ class AutobotWindow(QMainWindow, Ui_MainWindow):
         self.publisher = rospy.Publisher(twist_topic_name, Twist, queue_size=100)
 
         self.opensimulation.clicked.connect(lambda: self.open_simulation())
+        self.closesimulation.clicked.connect(lambda: self.close_simulation())
+
+        self.clickopen = openSimulation()
+
+        self.readstm32 = readdata_Thread()
+        self.readstm32.update_angular.connect(self.handleDisplay)
+        self.readstm32.start()
+
+    def handleDisplay(self,data):
+        self.temperature.setText(str(data))
+
 
     def startTimer(self):
         self.timer1.start(1000)
 
     def open_simulation(self):
+        self.clickopen.start()
+
+    # def updateProcessBar(self):
+    #     self.linear, self.angular = self.fsvjoy_widget.get_info()
+    #     self.linear_number.setText(str(self.linear))
+    #     self.angular_number.setText(str(self.angular))
+    #
+    #     self.acc_x.setText(str(acc_x))
+    #     self.acc_y.setText(str(acc_y))
+    #     self.acc_z.setText(str(acc_z))
+    #
+    #     self.angular_x.setText(str(angular_x))
+    #     self.angular_y.setText(str(angular_y))
+    #     self.angular_z.setText(str(angular_z))
+    #
+    #     self.angle_x.setText(str(angle_x))
+    #     self.angle_y.setText(str(angle_y))
+    #     self.angle_z.setText(str(angle_z))
+    #
+    #     # self.temperature.setText(str(temperature))
+    #
+    #     twist = Twist()
+    #     twist.linear.x = self.linear
+    #     twist.angular.z = -self.angular
+    #     self.publisher.publish(twist)
+
+
+class openSimulation(QThread):
+    def __init__(self):
+        super(openSimulation, self).__init__()
+
+    def run(self):
         os.system("roslaunch autobot_simulation autobot_simulation.launch")
-
-    def updateProcessBar(self):
-        self.linear, self.angular = self.fsvjoy_widget.get_info()
-        self.linear_number.setText(str(self.linear))
-        self.angular_number.setText(str(self.angular))
-
-        self.acc_x.setText(str(acc_x))
-        self.acc_y.setText(str(acc_y))
-        self.acc_z.setText(str(acc_z))
-
-        self.angular_x.setText(str(angular_x))
-        self.angular_y.setText(str(angular_y))
-        self.angular_z.setText(str(angular_z))
-
-        self.angle_x.setText(str(angle_x))
-        self.angle_y.setText(str(angle_y))
-        self.angle_z.setText(str(angle_z))
-
-        self.temperature.setText(str(temperature))
-
-        twist = Twist()
-        twist.linear.x = self.linear
-        twist.angular.z = -self.angular
-        self.publisher.publish(twist)
 
 
 class workThread(QThread):
@@ -105,8 +125,8 @@ class workThread(QThread):
 if __name__ == '__main__':
     rospy.init_node("autobot_control")
 
-    workThread = workThread()
-    workThread.start()
+    # workThread = workThread()
+    # workThread.start()
 
     app = QApplication(sys.argv)
 

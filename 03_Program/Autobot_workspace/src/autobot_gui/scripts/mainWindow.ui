@@ -340,6 +340,19 @@
      <string>打开Autobot仿真环境</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="closesimulation">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>151</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>关闭Autobot仿真环境</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
